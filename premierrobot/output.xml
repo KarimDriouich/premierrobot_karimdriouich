@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20191220 22:22:27.681" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\karim\eclipse-workspace\premierrobot" id="s1" name="Premierrobot">
+<suite source="C:\Users\karim\eclipse-workspace\premierrobot\test1.robot" id="s1-s1" name="Test1">
+<test id="s1-s1-t1" name="MyFirstTest">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello world...</arg>
+</arguments>
+<msg timestamp="20191220 22:22:27.921" level="INFO">Hello world...</msg>
+<status status="PASS" endtime="20191220 22:22:27.921" starttime="20191220 22:22:27.920"></status>
+</kw>
+<tags>
+<tag>first</tag>
+</tags>
+<status status="PASS" endtime="20191220 22:22:27.922" critical="yes" starttime="20191220 22:22:27.919"></status>
+</test>
+<test id="s1-s1-t2" name="MyFirstTestSelenium">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://google.com</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20191220 22:22:27.924" level="INFO">Opening browser 'gc' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20191220 22:22:35.977" starttime="20191220 22:22:27.923"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20</arg>
+</arguments>
+<status status="PASS" endtime="20191220 22:22:35.981" starttime="20191220 22:22:35.978"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20191220 22:22:38.065" starttime="20191220 22:22:35.982"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>second</arg>
+</arguments>
+<msg timestamp="20191220 22:22:38.072" level="INFO">Set tag 'second'.</msg>
+<status status="PASS" endtime="20191220 22:22:38.073" starttime="20191220 22:22:38.069"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+<tag>second</tag>
+</tags>
+<status status="PASS" endtime="20191220 22:22:38.074" critical="yes" starttime="20191220 22:22:27.922"></status>
+</test>
+<test id="s1-s1-t3" name="Sample Login Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>gc</arg>
+</arguments>
+<msg timestamp="20191220 22:22:38.082" level="INFO">Opening browser 'gc' to base url 'https://orangehrm-demo-6x.orangehrmlive.com'.</msg>
+<status status="PASS" endtime="20191220 22:22:46.883" starttime="20191220 22:22:38.080"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtUsername</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20191220 22:22:46.884" level="INFO">Typing text 'Admin' into text field 'id=txtUsername'.</msg>
+<status status="PASS" endtime="20191220 22:22:47.012" starttime="20191220 22:22:46.883"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=txtPassword</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20191220 22:22:47.013" level="INFO">Typing text 'admin123' into text field 'id=txtPassword'.</msg>
+<status status="PASS" endtime="20191220 22:22:47.135" starttime="20191220 22:22:47.012"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=Submit</arg>
+</arguments>
+<msg timestamp="20191220 22:22:47.136" level="INFO">Clicking button 'name=Submit'.</msg>
+<status status="PASS" endtime="20191220 22:22:51.426" starttime="20191220 22:22:47.135"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20191220 22:22:54.061" starttime="20191220 22:22:51.426"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="PASS" endtime="20191220 22:22:54.062" critical="yes" starttime="20191220 22:22:38.077"></status>
+</test>
+<status status="PASS" endtime="20191220 22:22:54.067" starttime="20191220 22:22:27.735"></status>
+</suite>
+<status status="PASS" endtime="20191220 22:22:54.079" starttime="20191220 22:22:27.711"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">first</stat>
+<stat fail="0" pass="2">sanity</stat>
+<stat fail="0" pass="1">second</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Premierrobot" pass="3">Premierrobot</stat>
+<stat fail="0" id="s1-s1" name="Test1" pass="3">Premierrobot.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
